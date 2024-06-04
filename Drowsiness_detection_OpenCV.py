@@ -6,8 +6,8 @@ def calculate_EAR(eye):
 	A = distance.euclidean(eye[1], eye[5])
 	B = distance.euclidean(eye[2], eye[4])
 	C = distance.euclidean(eye[0], eye[3])
-	ear_aspect_ratio = (A+B)/(2.0*C)
-	return ear_aspect_ratio
+	eye_aspect_ratio = (A+B)/(2.0*C)
+	return eye_aspect_ratio
 
 cap = #Reading camera
 hog_face_detector = dlib.get_frontal_face_detector()
